@@ -1,0 +1,10 @@
+body {
+  background-color: rgb(119, 0, 255);
+  display: inline-flexbox;
+  margin: 50px;
+  font-size: 20px;
+  font-weight: 100vh;
+  color: rgb(20, 125, 167);
+  align-items: stretch;
+}
+
