@@ -20,12 +20,11 @@ var country = "";
 
 var listOfSearchedCities = [];
 
-var getSeachedCitiesFromLS = JSON.parse(localStorage.getItem("searched-cities"));
+var getSeachedCitiesFromLS = JSON.parse(window.localStorage.getItem("searched-cities"));
 if (getSeachedCitiesFromLS !== null) {
     getSeachedCitiesFromLS.forEach(function(city) { city.toUpperCase(); });
     listOfSearchedCities = getSeachedCitiesFromLS;
 }
-
 $(document).ready(function() {
     displayCities(listOfSearchedCities);
     if (getSeachedCitiesFromLS !== null) {
